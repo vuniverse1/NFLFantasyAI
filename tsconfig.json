@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],  // Specify the libraries to be included in the compilation
+    "allowJs": true,  // Allow JavaScript files to be compiled
+    "skipLibCheck": true,  // Skip type checking of declaration files
+    "strict": true,  // Enable all strict type checking options
+    "noEmit": true,  // Do not emit compiled output files
+    "esModuleInterop": true,  // Enable compatibility with CommonJS and ES Modules
+    "module": "esnext",  // Specify the module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'esnext'
+    "moduleResolution": "node",  // Specify module resolution strategy: 'node' for Node.js module resolution
+    "resolveJsonModule": true,  // Allow importing JSON modules
+    "isolatedModules": true,  // Ensure each file can be safely transpiled without relying on other imports
+    "jsx": "preserve",  // Specify JSX code generation: 'preserve', 'react-native', or 'react'
+    "incremental": true,  // Enable incremental compilation
+    "plugins": [
+      {
+        "name": "next"  // Use the 'next' TypeScript plugin
+      }
+    ],
+    "paths": {
+      "@/*": ["./*"]  // Define path alias for module imports
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],  // Include specific files and directories in the compilation
+  "exclude": ["node_modules"]  // Exclude specific files and directories from the compilation
+}

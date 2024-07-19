@@ -1,0 +1,22 @@
+/* app/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom global styles */
+body {
+  @apply bg-black text-neon-green;
+  background-image: url('/images/background.JPEG'); /* Relative path from the public directory */
+  background-size: contain; /* Adjust the size of the background image */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+
+/* Custom Tailwind CSS configuration */
+:root {
+  --neon-green: #39ff14; /* Neon green color */
+}
+
+.text-neon-green {
+  color: var(--neon-green);
+}
